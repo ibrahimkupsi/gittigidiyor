@@ -45,8 +45,8 @@ public class Gittigidiyor{
 
     public void userInformation(){
         try {
-            driver.findElement(email).sendKeys("ibrahimkupsi@gmail.com");//kullanıcı adı textbox bulunup dolduruluyor
-            driver.findElement(password).sendKeys("q1x2w3z4.");// şifret extbox bulunup dolduruluyor
+            driver.findElement(email).sendKeys("***@***.com");//kullanıcı adı textbox bulunup dolduruluyor
+            driver.findElement(password).sendKeys("*******");// şifre textbox bulunup dolduruluyor
             driver.findElement(submit).click();//  submit butonuna tıklama yapılıyor
             Thread.sleep(1500);
         } catch (InterruptedException e) {
