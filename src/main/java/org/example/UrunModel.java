@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class UrunModel {
     WebDriver driver;
-    By searchWord = By.xpath("//*[@class='sc-4995aq-0 sc-14oyvky-0 itMXHg']");// Krlimr aramaı
+    By searchWord = By.xpath("//*[@class='sc-4995aq-0 sc-14oyvky-0 itMXHg']");// kelime arama satırı bulunması
     By down = By.linkText("2");// 2. sayfada açılması
     By products= By.xpath("//*[@class='catalog-view clearfix products-container']/li/a");
     By close = By.xpath("//*[contains(@class,'tyj39b-3')]");
@@ -44,7 +44,7 @@ public class UrunModel {
         try {
             driver.findElement(down).click();
             Thread.sleep(2500);
-            Assert.assertEquals(driver.getCurrentUrl(),"https://www.gittigidiyor.com/arama/?k=bilgisayar&sf=2"); //ikinci sayfa kontrolü
+            Assert.assertEquals(driver.getCurrentUrl(),"https://www.gittigidiyor.com/arama/?k=bilgisayar&sf=2"); //ikinci sayfa kontrolü 
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
